@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Tema Compos Formulario Contacto */
+
+/*** Etiquetas ***/
+label{
+	font-size:30px;
+}
+
+.txtLblFrmInformes {
+    font-family: Roboto, Arial;
+    font-size: 1em;
+    line-height: 1em;
+    color: #FF9300;
+    text-align: left;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/*** Campo de Texto ***/
+input.form-control:-moz-placeholder {
+  color: #b2bcc5;
+  outline:none;
+}
+input.form-control:-moz-placeholder {
+  color: #b2bcc5;
+}
+input.form-control:-ms-input-placeholder {
+  color: #b2bcc5;
+}
+input.form-controll:-webkit-input-placeholder {
+  color: #b2bcc5;
+}
+input.form-control.placeholder {
+  color: #b2bcc5;
+}
+input[type="text"], input[type="email"]{
+  border: 2px solid #bdc3c7;
+  color: #34495e;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  /*width:20em;*/
+  width: 95%;
+  height: 41px;
+  -webkit-appearance: none;
+    6px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  -moz-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  -o-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  -webkit-backface-visibility: hidden;
+  border-radius:0;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+  border-color:#f39c12;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius:0;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #f4f6f6;
+  border-color: #d5dbdb;
+  color: #d5dbdb;
+  cursor: default;
+}
+.form-control.flat {
+  border-color: transparent;
+}
+.form-control.flat:hover {
+  border-color: #bdc3c7;
+}
+.form-control.flat:focus {
+  border-color: #1abc9c;
+}
+.input-sm {
+  height: 34px;
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+
+/*** Area de Texto ***/
+textarea:-moz-placeholder {
+  color: #b2bcc5;
+  outline:none;
+}
+textarea:-moz-placeholder {
+  color: #b2bcc5;
+}
+textarea:-ms-input-placeholder {
+  color: #b2bcc5;
+}
+textarea:-webkit-input-placeholder {
+  color: #b2bcc5;
+}
+textarea.placeholder {
+  color: #b2bcc5;
+}
+textarea {
+  /*width:500px;*/
+  border: 2px solid #bdc3c7;
+  border-radius:0;
+  color: #34495e;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  heigth:5em;
+  -webkit-appearance: none;
+    6px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  -moz-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  -o-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  -webkit-backface-visibility: hidden;
+}
+textarea:focus {
+  border-color:#f39c12;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.textarea-sm {
+  height: 34px;
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/*** Boton ***/
+input.myBtn.myBtn-primary {
+  border:none;
+  padding:5px 25px;
+  box-sizing:border-box;
+  color:white;
+  background-color:#d35400;
+  font-family:Lato;
+  font-size:18px;
+  line-height:1.5em;
+}
+
+input.myBtn.myBtn-primary:hover,
+input.myBtn.myBtn-primary:focus,
+input.myBtn-group:focus .myBtn.myBtn-primary.dropdown-toggle {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  background-color: #f39c12;
+  vertical-align: middle;
+}
+
+input.myBtn.myBtn-primary:active,
+input.myBtn-group.open .myBtn.btn-primary.dropdown-toggle,
+input.myBtn.myBtn-primary.active {
+  background-color:#e67e22;
+}
+
+/*Ajuste de posicion del boton del combobox*/
+.combobox {
+    width: 298px !important;
+}
+
+/*Ajuste del ancho del textarea del comentario*/
+textarea {
+    width: 100%;
+}

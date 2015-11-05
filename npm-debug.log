@@ -1,0 +1,227 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gitk',
+1 verbose cli   'giggle',
+1 verbose cli   'git-cola',
+1 verbose cli   'git-gui-git' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData gitk
+8 silly fetchPackageMetaData giggle
+9 silly fetchPackageMetaData git-cola
+10 silly fetchPackageMetaData git-gui-git
+11 silly fetchNamedPackageData gitk
+12 silly mapToRegistry name gitk
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gitk
+16 silly fetchNamedPackageData giggle
+17 silly mapToRegistry name giggle
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/giggle
+21 silly fetchNamedPackageData git-cola
+22 silly mapToRegistry name git-cola
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/git-cola
+26 silly fetchNamedPackageData git-gui-git
+27 silly mapToRegistry name git-gui-git
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/git-gui-git
+31 verbose request uri https://registry.npmjs.org/gitk
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 12:11:54
+34 verbose request id 5a8057a625dcd92d
+35 http request GET https://registry.npmjs.org/gitk
+36 verbose request uri https://registry.npmjs.org/git-cola
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 12:11:54
+39 http request GET https://registry.npmjs.org/git-cola
+40 verbose request uri https://registry.npmjs.org/git-gui-git
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 12:11:54
+43 http request GET https://registry.npmjs.org/git-gui-git
+44 verbose request uri https://registry.npmjs.org/giggle
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 12:11:54
+47 verbose etag "DP1VZYASFZSKKBUIG03JC0FXF"
+48 http request GET https://registry.npmjs.org/giggle
+49 http 304 https://registry.npmjs.org/giggle
+50 verbose headers { date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   'cache-control': 'max-age=60',
+50 verbose headers   etag: '"DP1VZYASFZSKKBUIG03JC0FXF"',
+50 verbose headers   age: '15',
+50 verbose headers   connection: 'keep-alive',
+50 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+50 verbose headers   'x-cache': 'HIT',
+50 verbose headers   'x-cache-hits': '1',
+50 verbose headers   'x-timer': 'S1446747115.127205,VS0,VE0',
+50 verbose headers   vary: 'Accept' }
+51 silly get cb [ 304,
+51 silly get   { date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+51 silly get     via: '1.1 varnish',
+51 silly get     'cache-control': 'max-age=60',
+51 silly get     etag: '"DP1VZYASFZSKKBUIG03JC0FXF"',
+51 silly get     age: '15',
+51 silly get     connection: 'keep-alive',
+51 silly get     'x-served-by': 'cache-lax1422-LAX',
+51 silly get     'x-cache': 'HIT',
+51 silly get     'x-cache-hits': '1',
+51 silly get     'x-timer': 'S1446747115.127205,VS0,VE0',
+51 silly get     vary: 'Accept' } ]
+52 verbose etag https://registry.npmjs.org/giggle from cache
+53 verbose get saving giggle to C:\Users\Joseph10\AppData\Roaming\npm-cache\registry.npmjs.org\giggle\.cache.json
+54 http 404 https://registry.npmjs.org/gitk
+55 verbose headers { 'content-type': 'application/json',
+55 verbose headers   'cache-control': 'max-age=0',
+55 verbose headers   'content-length': '2',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   age: '0',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-lax1432-LAX',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1446747115.204688,VS0,VE50' }
+56 silly get cb [ 404,
+56 silly get   { 'content-type': 'application/json',
+56 silly get     'cache-control': 'max-age=0',
+56 silly get     'content-length': '2',
+56 silly get     'accept-ranges': 'bytes',
+56 silly get     date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+56 silly get     via: '1.1 varnish',
+56 silly get     age: '0',
+56 silly get     connection: 'keep-alive',
+56 silly get     'x-served-by': 'cache-lax1432-LAX',
+56 silly get     'x-cache': 'MISS',
+56 silly get     'x-cache-hits': '0',
+56 silly get     'x-timer': 'S1446747115.204688,VS0,VE50' } ]
+57 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/gitk
+57 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+57 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+57 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+57 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+57 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+57 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+57 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+57 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+57 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+57 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+57 silly fetchPackageMetaData  error for gitk { [Error: Registry returned 404 for GET on https://registry.npmjs.org/gitk] pkgid: 'gitk', statusCode: 404, code: 'E404' }
+58 http 404 https://registry.npmjs.org/git-cola
+59 verbose headers { 'content-type': 'application/json',
+59 verbose headers   'cache-control': 'max-age=0',
+59 verbose headers   'content-length': '2',
+59 verbose headers   'accept-ranges': 'bytes',
+59 verbose headers   date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+59 verbose headers   via: '1.1 varnish',
+59 verbose headers   age: '0',
+59 verbose headers   connection: 'keep-alive',
+59 verbose headers   'x-served-by': 'cache-lax1424-LAX',
+59 verbose headers   'x-cache': 'MISS',
+59 verbose headers   'x-cache-hits': '0',
+59 verbose headers   'x-timer': 'S1446747115.217086,VS0,VE78' }
+60 silly get cb [ 404,
+60 silly get   { 'content-type': 'application/json',
+60 silly get     'cache-control': 'max-age=0',
+60 silly get     'content-length': '2',
+60 silly get     'accept-ranges': 'bytes',
+60 silly get     date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+60 silly get     via: '1.1 varnish',
+60 silly get     age: '0',
+60 silly get     connection: 'keep-alive',
+60 silly get     'x-served-by': 'cache-lax1424-LAX',
+60 silly get     'x-cache': 'MISS',
+60 silly get     'x-cache-hits': '0',
+60 silly get     'x-timer': 'S1446747115.217086,VS0,VE78' } ]
+61 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/git-cola
+61 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+61 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+61 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+61 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+61 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+61 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+61 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+61 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+61 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+61 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+61 silly fetchPackageMetaData  error for git-cola { [Error: Registry returned 404 for GET on https://registry.npmjs.org/git-cola] pkgid: 'git-cola', statusCode: 404, code: 'E404' }
+62 http 404 https://registry.npmjs.org/git-gui-git
+63 verbose headers { 'content-type': 'application/json',
+63 verbose headers   'cache-control': 'max-age=0',
+63 verbose headers   'content-length': '2',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '0',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-lax1432-LAX',
+63 verbose headers   'x-cache': 'MISS',
+63 verbose headers   'x-cache-hits': '0',
+63 verbose headers   'x-timer': 'S1446747115.124418,VS0,VE307' }
+64 silly get cb [ 404,
+64 silly get   { 'content-type': 'application/json',
+64 silly get     'cache-control': 'max-age=0',
+64 silly get     'content-length': '2',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Thu, 05 Nov 2015 18:11:55 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '0',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-lax1432-LAX',
+64 silly get     'x-cache': 'MISS',
+64 silly get     'x-cache-hits': '0',
+64 silly get     'x-timer': 'S1446747115.124418,VS0,VE307' } ]
+65 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/git-gui-git
+65 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+65 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+65 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+65 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+65 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+65 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+65 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+65 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+65 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+65 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+65 silly fetchPackageMetaData  error for git-gui-git { [Error: Registry returned 404 for GET on https://registry.npmjs.org/git-gui-git] pkgid: 'git-gui-git', statusCode: 404, code: 'E404' }
+66 silly rollbackFailedOptional Starting
+67 silly rollbackFailedOptional Finishing
+68 silly runTopLevelLifecycles Starting
+69 silly runTopLevelLifecycles Finishing
+70 silly install printInstalled
+71 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/gitk
+71 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+71 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+71 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+71 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+71 verbose stack     at emitTwo (events.js:87:13)
+71 verbose stack     at Request.emit (events.js:172:7)
+71 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+71 verbose stack     at emitOne (events.js:82:20)
+71 verbose stack     at Request.emit (events.js:169:7)
+71 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+72 verbose statusCode 404
+73 verbose pkgid gitk
+74 verbose cwd c:\xampp\htdocs\genesis
+75 error Windows_NT 10.0.10240
+76 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gitk" "giggle" "git-cola" "git-gui-git"
+77 error node v5.0.0
+78 error npm  v3.3.6
+79 error code E404
+80 error 404 Registry returned 404 for GET on https://registry.npmjs.org/gitk
+80 error 404
+80 error 404 'gitk' is not in the npm registry.
+80 error 404 You should bug the author to publish it (or use the name yourself!)
+80 error 404
+80 error 404 Note that you can also install from a
+80 error 404 tarball, folder, http url, or git url.
+81 verbose exit [ 1, true ]

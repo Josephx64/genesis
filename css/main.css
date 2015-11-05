@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Eliminar el borde naranja en google chrome*/
+*:focus {
+	outline: none;
+}
+
+/*Ajuste a relleno superior del logo en la barra de naveación*/
+.navbar-brand {
+	padding-top: 5px;
+}
+
+a {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+/*Espaciador de 2em de alto*/
+.spacer2em{
+	height: 2em;
+}
+
+/*Espaciador de 10em de alto*/
+.spacer10em{
+	height: 10em;
+}
+
+/*Espaciador de 10em de alto*/
+.spacer15em{
+	height: 15em;
+}
+
+/*Jumbotorn Principal*/
+#jbnPrincipal{
+	/*background-color: #f39c12;*/
+	background-image: url("../img/mainPic.jpg");
+	height: 34em;
+}
+
+/*Alto del pie de pagina*/
+#footer{
+	height:150px;
+}
+
+/*Textos*/
+.encabezadoGris{
+	color: #7f8c8d;
+}
+
+/** BARRA DE NAVEGACION SUPERIOR **/
+
+/*Bordes de la barra*/
+.navbar-default {
+    /*background-color: #f8f8f8;*/
+    /*border-color: #e7e7e7;*/
+	border: none;
+}
+
+/*Color de textos de la barra*/
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+/*Color de fondo y texto del link de la seccion actual*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #d35400;
+}
+
+/*Fondo y color de texto de los links al pasar el puntero sobre estos*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #d35400;
+    background-color: #f39c12;
+}
+
+.txtPortadaHeader{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10em;
+	text-shadow: 4px 6px 0px #7f8c8d;
+}
+
+.txtPortadaSubtitulo{
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-shadow: 2px 3px 0px #7f8c8d;
+}

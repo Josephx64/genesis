@@ -1,0 +1,151 @@
+/*  TODO
+	==================================================
+
+		1. Gather information about the combobox
+			- Textbox (H: 60px, W: 260px)
+			- Button (H: 60px, W: 60px, bg: #1f7f5c)
+			- Unordered List (H: x, W: 320px, bg: #1f7f5c, item-border: #2a8664)
+			- Font (@import url(http://fonts.googleapis.com/css?family=Montserrat);)
+		2. Style textbox
+		3. Style button
+		4. Style ul
+		5. Show/hide ul when button is clicked
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+html, input, textarea, a {
+  font-family: 'Montserrat';
+}
+*/
+
+input[type=text].txtbox {
+	color: #34495e;
+	height: 42px;
+	width: 255px;
+    font-family: Lato;
+	font-size: 15px;
+	border: 1px solid #f0f0f0;
+	padding-left: 21px;
+	outline: none;
+	border: 2px solid #bdc3c7;
+}
+input[type=text]:focus{
+    border-color: #f39c12;
+}
+
+.txtbox-btn {
+	width: 42px;
+	height: 42px;
+	background: #FF9300;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	color: #ffffff;
+	display: inline-block;
+	cursor:pointer;
+}
+
+.txtbox-btn:hover{
+	color:white;
+	text-decoration:none;
+}
+
+/*Estilo personalizado agregado por JLRZ*/
+#txtAsunto:disabled{
+	background: #DDDDDD;
+}
+
+
+.combobox {
+	position: relative;
+	width: 302px;
+	height: 42px;
+}
+
+.combobox input[type=text].txtbox,
+.combobox .txtbox-btn {
+	position: absolute;
+}
+
+.combobox .txtbox-btn img {
+	/*-webkit-background-image:url(img/bltFlecha_Abajo.png);*/
+	background-repeat:no-repeat;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	margin-top:1px;
+}
+
+/**/
+/*placeholder de la caja de texto*/
+.combobox input[type=text].txtbox:-moz-placeholder {
+  color: #b2bcc5;
+  outline:none;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.combobox input[type=text].txtbox:-moz-placeholder {
+  color: #b2bcc5;
+}
+.combobox input[type=text].txtbox:-ms-input-placeholder {
+  color: #b2bcc5;
+}
+.combobox input[type=text].txtbox:-webkit-input-placeholder {
+  color: #b2bcc5;
+}
+.combobox input[type=text].txtbox.placeholder {
+  color: #b2bcc5;
+  background-color:lime;
+  outline:none;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+/**/
+
+.combobox .txtbox-btn {
+	right: 0;
+}
+
+.combobox + .combobox-options {
+	width: 302px;
+	position: absolute;
+	background: #FF9300;
+	color: #ffffff;
+	z-index:999;
+}
+
+.combobox + .combobox-options li {
+	height: 50px;
+	padding: 12px;
+	border-bottom: 1px solid #e67e22;
+	display: table;
+	width: 100%;
+    font-size:16px;
+    font-family:Lato;
+}
+
+.combobox + .combobox-options li:hover {
+    background-color:#d35400;
+}
+
+.combobox + .combobox-options li span {
+	display: table-cell;
+	vertical-align: middle;
+}

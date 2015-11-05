@@ -1,0 +1,89 @@
+/* COMBOBOX
+====================================================================================
+1. Reunir informacion del componente
+	- Textbox (W:260px, H:60px)
+	- Boton (W:60px, H:60px, bg:#1f7f5c)
+	- Unorderedlist (W:x, H:60px, bg:#1f7f5c, item-border:#2a8664)
+	- Font (@import url(http://fonts.googleapis.com/css?family=Montserrat);)
+
+2. Estilo del Textbox
+3. Estilo del Boton
+4. Estilo del UL
+5. Show/Hide ul when button is clicked
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+html, input, textarea, a {
+	font-family: 'Montserrat';
+}
+
+input[type=text].txtbox{
+	color:#000000;
+	height: 60px;
+	width: 260px;
+	font-size: 18px;
+	border: 1px solid #f0f0f0;
+	padding-left: 21px;
+	outline: none;
+}
+
+.txtbox-btn {
+	width: 60px;
+	height: 60px;
+	background-color: #FF9300;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	color: #ffffff;
+	display: inline-block;
+}
+
+.combobox{
+	position: relative;
+	width: 320px;
+	height: 60px;
+}
+
+.combobox input[type=text].txtbox,
+.combobox .txtbox-btn{
+	position: absolute;
+}
+
+.combobox .txtbox-btn {
+	right: 0;
+}
+
+.combobox + .combobox-options{
+	width: 320px;
+	position: absolute;
+	background-color: #1f7f5c;
+	color: #ffffff;
+}
+
+.combobox + .combobox-options li{
+	height: 50px;
+	padding: 12px;
+	border-bottom: 1px solid #2a8664;
+	display: table;
+	width:100%;
+}
+
+.combobox + .combobox-options li span{
+	display: table-cell;
+	vertical-align: middle;
+}

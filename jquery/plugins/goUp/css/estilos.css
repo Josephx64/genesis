@@ -1,0 +1,22 @@
+/* Estilo para el boton "Ir Arriba" */
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none; /* Estara oculto por defecto */
+    text-indent: -9999px; /* Oculta el texto del enlace */
+    z-index: 1000; /* Evita que otros elementos esten por encima */
+    background: url('../img/arriba.png') no-repeat;
+}
+/* Estilo para generar un efecto al posicionar el puntero encima del botón */
+.scroll-top:hover {
+    opacity: 0.8;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    transition: 0.3s all;
+}
