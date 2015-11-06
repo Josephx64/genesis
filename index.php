@@ -69,7 +69,7 @@
 	    </div>
 
 		<!-- Contenido de Página -->
-		<div class="container">
+		<div class="container" id="cntPrincipal">
 
 			<div class="page-header">
 				<h1> <?php echo $row_rsVwTextos['textoEspanol']; ?> </h1>

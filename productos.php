@@ -139,16 +139,14 @@
 		<?php include("inc/footer.php"); ?>
 
 
+		<!-- Bootstrap core JavaScript
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
 		<!-- * * * * Boton ir arriba * * * * -->
 		<a href="#" class="scroll-top">Ir Arriba</a>
 		<script src="jquery/plugins/goUp/js/jquery.js"></script>
 		<script src="jquery/plugins/goUp/js/funciones.js"></script>
-
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
 
 	</body>
 </html>

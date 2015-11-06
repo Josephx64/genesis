@@ -64,7 +64,9 @@ $row_rsCategorias = mysql_fetch_assoc($rsCategorias);
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- jQuery1.11.0 -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+		<script src="jquery/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -178,7 +180,7 @@ $row_rsCategorias = mysql_fetch_assoc($rsCategorias);
 		<script src="js/jquery-ui.js"></script>
 
 		<!-- Script del plugin Bootstrap Validator -->
-		<script src="jquery/plugins/bootstrapValidator/bootstrapValidator.min.js"></script>
+		<script src="jquery/plugins/BootstrapValidator/bootstrapValidator.min.js"></script>
  		<!-- Script de configuraciones del plugin Bootstrap Validator -->
 		<script type="text/javascript" src="js/validator.js"></script>
 		<!-- Script del validador de cooreo electrónico -->
