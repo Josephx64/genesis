@@ -3,14 +3,14 @@
 	// Variable que indica la seccion
 	$Seccion = 'Inicio';
 
-	//Requerir el archivo de conexion al servidor
+	// Requerir el archivo de conexion al servidor
 	require_once('inc/cxnServidor.php');
 
-	//Consulta Recuperar textos
+	// Consulta Recuperar textos
 	$query_rsVwTextos = "SELECT * FROM general ORDER BY idTexto DESC";
-	//RecordSet de la consulta
+	// RecordSet de la consulta
 	$rsVwTextos = mysql_query($query_rsVwTextos, $cxnServidor) or die(mysql_error());
-	//Matriz que devulve las filas recuperadas
+	// Matriz que devulve las filas recuperadas
 	$row_rsVwTextos = mysql_fetch_assoc($rsVwTextos);
 
  ?>
